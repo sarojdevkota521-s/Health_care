@@ -62,13 +62,7 @@ git clone <repository-url>
 cd Health_care bash 
 ```
 
-### 2. Clone Repository
-
-```bash
-git clone <repository-url>
-cd Health_care
-```
-### 3. Create Virtual Environment
+### 2. Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -80,7 +74,7 @@ venv\Scripts\activate      # Windows
 ```bash
 pip install -r requirements.txt
 ```
-### 3. PostgreSQL Configuration
+### 4. PostgreSQL Configuration
 Create PostgreSQL database:
 
 ```bash
@@ -101,7 +95,7 @@ DATABASES = {
     }
 }
 ```
-### 3. Run Migrations
+### 5. Run Migrations
 
 ```bash
 python manage.py makemigrations
@@ -111,7 +105,7 @@ Create superuser
 ```bash
 python manage.py createsuperuser
 ```
-### 3. Run Server
+### 6. Run Server
 
 ```bash
 python manage.py runserver
